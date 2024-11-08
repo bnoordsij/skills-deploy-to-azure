@@ -52,7 +52,7 @@ jobs:
 
     if: contains(github.event.pull_request.labels.*., 'destroy environment')
 
-    steps:
+    steps: |
       - : Checkout repository
         uses: actions/checkout@v4
 
