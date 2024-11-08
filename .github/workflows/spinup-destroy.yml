@@ -18,7 +18,7 @@ jobs:
   setup-up-azure-resources:
     runs-on: ubuntu-latest
     if: contains(github.event.pull_request.labels.*., 'spin up environment')
-    steps:
+    steps: |
       - : Checkout repository
         uses: actions/checkout@v4
 
